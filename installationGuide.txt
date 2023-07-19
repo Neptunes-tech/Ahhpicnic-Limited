@@ -1,0 +1,11 @@
+Download and install XAMPP "php": "^7.2.5" version
+Download and install Composer ( https://getcomposer.org/download/)
+composer install OR composer update
+php artisan key:generate
+php artisan cache:clear
+Run Apache and MySQL
+php artisan serve (FOR SERVER RUNING)
+
+php artisan storage:link (IF IMAGES NOT SHOW)
+composer dump-autoload   (IF 500 SERVER ERROR)
+php artisan config:cache
