@@ -21,6 +21,8 @@ Route::get('/login/{lang?}', 'Auth\LoginController@showLoginForm')->name('login'
 
 Route::get('/password/resets/{lang?}', 'Auth\LoginController@showLinkRequestForm')->name('change.langPass');
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::prefix('customer')->as('customer.')->group(
     function (){
         Route::get('login/{lang}', 'Auth\LoginController@showCustomerLoginLang')->name('login.lang')->middleware(['XSS']);
